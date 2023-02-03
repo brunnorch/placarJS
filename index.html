@@ -15,9 +15,9 @@
     <section class="container">
         <h1 class="container__title">Insira os nomes dos times</h1>
 
-        <form action="placar.html" class="container__form" method="POST">
-            <input type="text" class="container__team" placeholder="CASA">
-            <input type="text" class="container__team" placeholder="VISITANTE">
+        <form class="container__form" action="placar.html" data-form>
+            <input type="text" class="container__team" placeholder="CASA" name="team1" value="CASA">
+            <input type="text" class="container__team" placeholder="VISITANTE" name="team2" value="VISITANTE">
             <input type="submit" class="container__button" value="Iniciar Partida">
         </form>
     </section>
@@ -38,6 +38,8 @@
             </a>
         </div>
     </footer>
+
+    <script src="js/main.js" type="module"></script>
 </body>
 
 </html>

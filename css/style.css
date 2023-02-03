@@ -20,7 +20,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 93vh;
+    height: 95vh;
 }
 
 .container__title {
@@ -29,7 +29,7 @@ body {
     border-radius: 10px;
     padding: 2em 1em;
     margin: 6em 0 4em;
-    font-size: 1.3em;
+    font-size: 1.7em;
     font-weight: 700;
     box-shadow: 1px 1px 5px black;
 }
@@ -44,7 +44,8 @@ body {
 .container__team {
     margin: 0.5em 0;
     width: 100%;
-    padding: 8px 4px;
+    padding: 1em 0.9em;
+    font-size: 18px;
     text-align: center;
     border-radius: 5px;
     box-shadow: 1px 1px 5px black;
@@ -54,7 +55,7 @@ body {
 .container__button {
     background-color: var(--button);
     color: var(--font-color);
-    font-size: 1em;
+    font-size: 1.5em;
     font-weight: 700;
     border-radius: 10px;
     margin-top: 3em;
@@ -74,4 +75,17 @@ body {
     color: var(--black);
     font-weight: 500;
     font-size: 12px;
+}
+
+@media screen and (min-width:1024px) {
+    .container__title {
+        padding: 2em 10em;
+        font-size: 2em;
+        margin: 5em 0 3em;
+    }
+
+    .container__team{
+        width: 50%;
+    }
+
 }

@@ -3,25 +3,24 @@
 :root {
     --font: 'Quicksand';
     --color-box: #FFFFFF;
+    --reset: #4B56D2;
     --button-gol: #54B435;
     --button-cancel: #b43535;
     --bg: linear-gradient(45deg, #36AE7C, #F9D923 50%, #EB5353);
     ;
-    --black: #000000;
+    --black: #292929;
 }
 
 body {
+    background: var(--bg);
     font-family: var(--font);
     font-weight: 700;
-    background: var(--bg);
     height: 100vh;
-    width: 100vw;
 }
 
 .scoreboard {
     display: flex;
-    justify-content: center;
-    margin-top: 1em;
+    justify-content: space-around;
 }
 
 .scoreboard__results {
@@ -29,10 +28,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    border-radius: 8px;
     width: 97%;
     padding: 1em 0;
-    border-radius: 8px;
-
+    margin-top: 3em;
 }
 
 .scoreboard__team {
@@ -44,6 +43,7 @@ body {
 .scoreboard__time {
     display: flex;
     flex-direction: column;
+    width: 20%;
 }
 
 .team {
@@ -84,4 +84,93 @@ body {
     margin-top: 1em;
     padding: 0.4em 0.5em;
     font-size: 14px;
+}
+
+.scoreboard__buttons {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 5em;
+}
+
+.scoreboard__reset {
+    display: flex;
+    align-items: center;
+}
+
+.reset__game {
+    background-color: var(--color-box);
+    font-size: 14px;
+    border: none;
+    padding: 0.7em 1.3em;
+    border-radius: 7px;
+    box-shadow: -2px 1px 5px var(--black);
+}
+
+.gol {
+    background-color: var(--button-gol);
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    padding: 0.7em 0em;
+    border-radius: 10px;
+    box-shadow: -3px 2px 5px var(--black);
+}
+
+.cancel {
+    background-color: var(--button-cancel);
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    padding: 0.7em 0em;
+    border-radius: 10px;
+    box-shadow: -3px 2px 5px var(--black);
+    margin-top: 1em;
+}
+
+@media screen and (min-width:1024px) {
+
+    .scoreboard__results,
+    .scoreboard__buttons {
+        margin-top: 1.5em;
+    }
+
+    .scoreboard__team {
+        width: 38%;
+    }
+
+    .team {
+        font-size: 56px;
+    }
+
+    .score {
+        font-size: 9em;
+    }
+
+    .time {
+        font-size: 56px;
+    }
+
+    .time__button {
+        font-size: 22px;
+    }
+
+    .gol {
+        font-size: 28px;
+    }
+
+    .cancel {
+        font-size: 28px;
+    }
+
+    .reset__game {
+        font-size: 22px;
+    }
+}
+
+@media screen and (min-width:1240px){
+    
+    .time {
+        font-size: 70px;
+    }
 }

@@ -15,26 +15,51 @@
         <div class="scoreboard__results">
 
             <div class="scoreboard__team">
-                <h1 class="team">Real de Madrid</h1>
-                <h4 class="score">2</h4>
+                <h1 class="team" data-team1></h1>
+                <h4 class="score">0</h4>
             </div>
 
 
             <div class="scoreboard__time">
-                <div class="time">00:00</div>
-                <button class="time__button">Começar</button>
-                <button class="time__button">Pausar</button>
-                <button class="time__button">Reiniciar</button>
+                <div class="time">
+                    <span id="minutes">00</span>:<span id="seconds">00</span>
+                </div>
+                <button class="time__button" data-options="start">Começar</button>
+                <button class="time__button" data-options="pause">Pausar</button>
+                <button class="time__button" data-options="reverse">Inverter</button>
+                <button class="time__button" data-options="restart">Reiniciar</button>
             </div>
 
 
             <div class="scoreboard__team">
-                <h1 class="team">Barcelona</h1>
-                <h4 class="score">4</h4>
+                <h1 class="team" data-team2></h1>
+                <h4 class="score">0</h4>
             </div>
 
         </div>
     </section>
+
+    <section class="scoreboard">
+
+        <div class="scoreboard__buttons">
+            <div class="scoreboard__team">
+                <button class="gol">GOOOL</button>
+                <button class="cancel">ANULAR</button>
+            </div>
+
+            <div class="scoreboard__reset">
+                <button class="reset__game" data-options="new">Novo jogo</button>
+            </div>
+
+            <div class="scoreboard__team">
+                <button class="gol">GOOOL</button>
+                <button class="cancel">ANULAR</button>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="js/game.js" type="module"></script>
 </body>
 
 </html>
