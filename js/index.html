@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/placar.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/placar.css">
     <title>Placar Virtual</title>
 </head>
 
@@ -16,12 +16,12 @@
 
             <div class="scoreboard__team">
                 <h1 class="team" data-team1></h1>
-                <h4 class="score">0</h4>
+                <h4 class="score" id="team1">0</h4>
             </div>
 
 
             <div class="scoreboard__time">
-                <div class="time">
+                <div class="time" id="time__color">
                     <span id="minutes">00</span>:<span id="seconds">00</span>
                 </div>
                 <button class="time__button" data-options="start">Começar</button>
@@ -33,7 +33,7 @@
 
             <div class="scoreboard__team">
                 <h1 class="team" data-team2></h1>
-                <h4 class="score">0</h4>
+                <h4 class="score" id="team2">0</h4>
             </div>
 
         </div>
@@ -43,8 +43,8 @@
 
         <div class="scoreboard__buttons">
             <div class="scoreboard__team">
-                <button class="gol">GOOOL</button>
-                <button class="cancel">ANULAR</button>
+                <button class="gol" data-goal="team1">GOOOL</button>
+                <button class="cancel" data-cancel="team1">ANULAR</button>
             </div>
 
             <div class="scoreboard__reset">
@@ -52,14 +52,14 @@
             </div>
 
             <div class="scoreboard__team">
-                <button class="gol">GOOOL</button>
-                <button class="cancel">ANULAR</button>
+                <button class="gol" data-goal="team2">GOOOL</button>
+                <button class="cancel" data-cancel="team2">ANULAR</button>
             </div>
         </div>
 
     </section>
 
-    <script src="js/game.js" type="module"></script>
+    <script src="game.js" type="module"></script>
 </body>
 
 </html>
