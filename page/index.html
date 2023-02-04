@@ -15,7 +15,7 @@
         <div class="scoreboard__results">
 
             <div class="scoreboard__team">
-                <h1 class="team" data-team1></h1>
+                <h1 class="team" id="nameTeam1" data-team1></h1>
                 <h4 class="score" id="team1">0</h4>
             </div>
 
@@ -32,7 +32,7 @@
 
 
             <div class="scoreboard__team">
-                <h1 class="team" data-team2></h1>
+                <h1 class="team" id="nameTeam2" data-team2></h1>
                 <h4 class="score" id="team2">0</h4>
             </div>
 
@@ -42,24 +42,24 @@
     <section class="scoreboard">
 
         <div class="scoreboard__buttons">
-            <div class="scoreboard__team">
-                <button class="gol" data-goal="team1">GOOOL</button>
-                <button class="cancel" data-cancel="team1">ANULAR</button>
+            <div class="scoreboard__team scoreboard__btn">
+                <button class="gol" id="btnScoreGoal1" data-goal="team1">GOOOL</button>
+                <button class="cancel" id="btnCancelGoal1" data-cancel="team1">ANULAR</button>
             </div>
 
             <div class="scoreboard__reset">
                 <button class="reset__game" data-options="new">Novo jogo</button>
             </div>
 
-            <div class="scoreboard__team">
-                <button class="gol" data-goal="team2">GOOOL</button>
-                <button class="cancel" data-cancel="team2">ANULAR</button>
+            <div class="scoreboard__team scoreboard__btn">
+                <button class="gol" id="btnScoreGoal2" data-goal="team2">GOOOL</button>
+                <button class="cancel" id="btnCancelGoal2" data-cancel="team2">ANULAR</button>
             </div>
         </div>
 
     </section>
 
-    <script src="game.js" type="module"></script>
+    <script src="../js/game.js" type="module"></script>
 </body>
 
 </html>

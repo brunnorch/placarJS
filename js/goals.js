@@ -1,5 +1,6 @@
 import { teams } from "./game.js";
 
+/* Função para marcar o gol atraves do valor da data attribute e atualizando o saldo no localStorage*/
 const btnGoal = document.querySelectorAll('[data-goal]');
 export function scoreGoal() {
     btnGoal.forEach((btn) => {
@@ -20,6 +21,7 @@ export function scoreGoal() {
     })
 }
 
+/* Função para anular o gol atraves do valor da data attribute e atualizando o saldo no localStorage */
 const btnCancel = document.querySelectorAll('[data-cancel]');
 export function cancelGoal() {
     btnCancel.forEach((btn) => {
