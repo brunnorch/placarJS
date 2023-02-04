@@ -32,7 +32,6 @@ body {
     margin: 2em 0 1em;
     font-size: 1.5em;
     font-weight: 700;
-    box-shadow: 1px 1px 5px black;
 }
 
 .container__form {
@@ -49,7 +48,7 @@ body {
     font-size: 18px;
     text-align: center;
     border-radius: 5px;
-    box-shadow: 1px 1px 5px black;
+    box-shadow: -3px 3px 5px black;
 
 }
 
@@ -61,7 +60,14 @@ body {
     border-radius: 10px;
     margin-top: 3em;
     padding: 0.6em 3em;
-    box-shadow: 2px 2px 5px black;
+    box-shadow: -3px 3px 5px black;
+    border: none;
+    cursor: pointer;
+}
+
+.container__button:hover {
+    background: var(--black);
+    transition: 0.5s;
 }
 
 .container__instructions {
