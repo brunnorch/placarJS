@@ -6,12 +6,12 @@
 <hr>
 
 <h2 align="center">Funcionalidades do projeto :hammer:</h2>
-- `Funcionalidade 1`: Inserir o nome dos times;
-- `Funcionalidade 2`: Temporizador com pause;
-- `Funcionalidade 3`: Inverter o lado do placar para mudança de campo dos times;
-- `Funcionalidade 4`: Reiniciar partida retornando os lados originais e zerando o tempo e os gols;
-- `Funcionalidade 5`: Botão para marcar gol e anular caso necessário;
-- `Funcionalidade 6`: Novo jogo para mundaça de times;
+> Inserir o nome dos times;<br>
+> Temporizador com pause;<br>
+> Inverter o lado do placar para mudança de campo dos times;<br>
+> Reiniciar partida retornando os lados originais e zerando o tempo e os gols;<br>
+> Botão para marcar gol e anular caso necessário;<br>
+> Novo jogo para mundaça de times;<br>
 
 <hr>
 
