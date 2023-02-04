@@ -10,6 +10,6 @@ form.addEventListener('submit', (e) => {
         "goal2": 0,
     }
     localStorage.setItem("teams", JSON.stringify(teams));
-    window.location.href = '../page/index.html'
+    window.location.href = "../page/index.html";
 })
 

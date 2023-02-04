@@ -100,6 +100,8 @@ function reverse() {
             /* Contador para chamar a função apenas 1 vez */
             onlyChange += 1;
         }
+        /* Esconde o botão para não inverter o placar novamente */
+        document.getElementById('hide').style.display = 'none';
     }
 }
 
