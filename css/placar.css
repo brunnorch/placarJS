@@ -146,7 +146,12 @@ body {
     }
 
     .scoreboard__team {
-        width: 38%;
+        width: 30%;
+    }
+
+    .scoreboard__time {
+        width: 33%;
+        align-items: center;
     }
 
     .team {
@@ -158,11 +163,13 @@ body {
     }
 
     .time {
-        font-size: 56px;
+        padding: 0.2em 0.2em;
+        font-size: 112px;
     }
 
     .time__button {
         font-size: 22px;
+        width: 50%;
     }
 
     .gol {
@@ -200,7 +207,7 @@ body {
 @media screen and (min-width:1240px) {
 
     .time {
-        font-size: 70px;
+        font-size: 140px;
     }
 
     .reset__game:hover {
@@ -219,5 +226,11 @@ body {
         background: #d41515;
         transition: 0.3s;
         font-size: 30px;
+    }
+}
+
+@media screen and (min-width:1444px) {
+    .time {
+        font-size: 160px;
     }
 }
